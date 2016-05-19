@@ -22,14 +22,14 @@
     transform: translate(-50%, -50%);
 }
 .centerbox{
-    display:table;
+    width:100%;
+    text-align:center;
 }
 .textcenter{
     font-family: arial;
-    display: table-cell;
     vertical-align: middle;
-    text-align: center;
     width: 100%;
+    text-align:center;
 }
 .title {
     font-family: arial;
@@ -47,7 +47,11 @@
 }
 
 .inline {
-    display: inline-block
+    display: inline-block;
+}
+
+.link {
+    font-weight: bold;
 }
 
 .infobox{ 
