@@ -1,8 +1,43 @@
 <html>
+    <head>
+        <title>Alistair Crook</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+        <script type = "text/javascript"  src = "js/jquery-1.12.3.min.js"></script>
+    </head>
+    <body>
+        <div id="mainscreen" class="centered title">
+            acrook
+        </div>
+	<div id="icons" class="rightside hidden">
+	    <div id="who" class="centerbox">
+		<i class="fa fa-user fa-5x" aria-hidden="true"></i> 
+		<div class="textcenter">Who I am</div>
+	    </div>
+	    <div id="what" class="centerbox">
+		<i class="fa fa-file-code-o fa-5x" aria-hidden="true"></i> 
+		<div class="textcenter">What I've done</div>
+	    </div>
+	    <div id="how" class="centerbox">
+		<i class="fa fa-envelope fa-5x" aria-hidden="true"></i> 
+		<div class="textcenter">How to talk to me</div>
+	    </div>
+	</div>
+    </body>
 
-This page has been returned to a state of construction, because the previous version was awful.
-<br />
-<br />
-<a href="files/ACrookCV.pdf">Looking for my CV?</a>
-
+<script>
+    var animated = 0;
+    $(document).ready(function() {
+        $('#mainscreen').mouseover(mouseonmain);
+    });
+    function mouseonmain() {
+	if (animated == 0){
+	    animated = 1;
+	    $('#mainscreen').animate({left: "25%"}, 1000, "swing", fadeinicons);
+	}
+    };
+    function fadeinicons() {
+        $('#icons').fadeIn();
+    };
+</script>
 </html>

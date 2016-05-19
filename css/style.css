@@ -1,0 +1,32 @@
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hidden {
+    display:none;
+}
+
+.rightside {
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.centerbox{
+    display:table;
+}
+.textcenter{
+    font-family: arial;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+}
+.title {
+    font-family: arial;
+    font-size: 100pt;
+    font-weight: bold;
+    letter-spacing: -8px;
+}
