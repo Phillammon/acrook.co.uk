@@ -6,8 +6,16 @@
         <script type = "text/javascript"  src = "js/jquery-1.12.3.min.js"></script>
     </head>
     <body>
-        <div id="mainscreen" class="centered title">
-            acrook
+        <div id="mainscreen" class="centered">
+            <div id="acrook" class="title">acrook</div>
+            <div id="belowscreen" class="hidden">
+                <hr></hr>
+                <div id="shortbio" class="textcenter">
+                Hi! I'm Alistair Crook, a second year Computer Science student at the University of Warwick. <br /><br />
+                Sometimes I make games. Sometimes I make music.<br /><br />
+                Want to know more? Try the links on the right!
+                </div>
+            </div>
         </div>
 	<div id="icons" class="rightside hidden">
 	    <div id="who" class="centerbox">
@@ -23,6 +31,9 @@
 		<div class="textcenter">How to talk to me</div>
 	    </div>
 	</div>
+        <div id="bottominfo" class="infobox hidden2">
+            Alistair "Phillammon" Crook. Last updated May 19th, 2016. <a href="https://github.com/Phillammon/acrook.co.uk/issues">Suggestions? Problems?</a></div>
+        </div>
     </body>
 
 <script>
@@ -33,11 +44,14 @@
     function mouseonmain() {
 	if (animated == 0){
 	    animated = 1;
-	    $('#mainscreen').animate({left: "25%"}, 1000, "swing", fadeinicons);
+	    $('#mainscreen').animate({left: "25%"}, 1000, "swing", fadestuff);
 	}
     };
-    function fadeinicons() {
-        $('#icons').fadeIn();
+    function fadestuff() {
+        $('#icons').fadeIn(500);
+        $('#bottominfo').fadeIn(500);
+        $('#mainscreen').width($('#mainscreen').width)
+        $('#belowscreen').slideDown(500);
     };
 </script>
 </html>
