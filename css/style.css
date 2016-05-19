@@ -48,3 +48,8 @@
     font-family: arial;
     font-size: small;
 }
+
+a{
+    color: black;
+    text-decoration: none;
+}
