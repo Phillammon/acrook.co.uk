@@ -12,6 +12,7 @@
                 <hr></hr>
                 <div id="shortbio" class="textcenter">
                 Hi! I'm Alistair Crook, a second year Computer Science student at the University of Warwick. <br /><br />
+                Sometimes I make games. Sometimes I make music. <br /><br />
                 </div>
             </div>
         </div>
@@ -35,15 +36,11 @@
     </body>
 
 <script>
-    var animated = 0;
     $(document).ready(function() {
-        $('#mainscreen').mouseover(mouseonmain);
+        setTimeout(dotheanimotion, 500);
     });
-    function mouseonmain() {
-	if (animated == 0){
-	    animated = 1;
-	    $('#mainscreen').animate({left: "25%"}, 1000, "swing", fadestuff);
-	}
+    function dotheanimotion() {
+        $('#mainscreen').animate({left: "25%"}, 1000, "swing", fadestuff);
     };
     function fadestuff() {
         $('#icons').fadeIn(500);
