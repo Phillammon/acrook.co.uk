@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Alistair Crook | Homepage</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
         <script type = "text/javascript"  src = "js/jquery-1.12.3.min.js"></script>
+        <meta charset="utf-8"/>
     </head>
     <body>
         <div id="mainscreen" class="centered">
@@ -13,6 +15,9 @@
                 <div id="shortbio" class="textcenter">
                 Hi! I'm Alistair Crook, a second year Computer Science student at the University of Warwick. <br /><br />
                 Sometimes I make games. Sometimes I make music. <br /><br />
+                <a href="https://github.com/Phillammon/"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                <a href="mailto:alistair@hippotigris.org.uk"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+                <a href="files/ACrookCV.pdf"><i class="fa fa-file-o fa-lg" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -41,12 +46,12 @@
 <script>
     $(document).ready(function() {
         setTimeout(dotheanimotion, 500);
-        $('#who').mouseover(function() {$('#whotext').stop().slideDown();});
-        $('#who').mouseleave(function() {$('#whotext').stop().slideUp();});
-        $('#what').mouseover(function() {$('#whattext').stop().slideDown();});
-        $('#what').mouseleave(function() {$('#whattext').stop().slideUp();});
-        $('#how').mouseover(function() {$('#howtext').stop().slideDown();});
-        $('#how').mouseleave(function() {$('#howtext').stop().slideUp();});
+        $('#who').mouseover(function() {$('#whotext').stop().slideDown(200);});
+        $('#who').mouseleave(function() {$('#whotext').stop().slideUp(200);});
+        $('#what').mouseover(function() {$('#whattext').stop().slideDown(200);});
+        $('#what').mouseleave(function() {$('#whattext').stop().slideUp(200);});
+        $('#how').mouseover(function() {$('#howtext').stop().slideDown(200);});
+        $('#how').mouseleave(function() {$('#howtext').stop().slideUp(200);});
     });
     function dotheanimotion() {
         $('#mainscreen').animate({left: "25%"}, 1000, "swing", fadestuff);
