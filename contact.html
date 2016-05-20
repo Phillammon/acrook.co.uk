@@ -17,15 +17,15 @@
         <div id="content" class="content">
             <div id="contactme">
                 <span id="default" class="contactfader"><br /></span>
-                <span id="email" class="contactfader hidden">alistair@hippotigris.org.uk via Email<br /></span>
-                <span id="phone" class="contactfader hidden">(+44)7474 109646 via Phone<br /></span>
-                <span id="github" class="contactfader hidden">www.github.com/Phillammon on Github<br /></span>
-                <span id="twitter" class="contactfader hidden">www.twitter.com/Phillammon on Twitter<br /></span>
-                <span id="linkedin" class="contactfader hidden">www.linkedin.com/in/alistair-c-69892981 on LinkedIn<br /></span>
-                <span id="skype" class="contactfader hidden">cryoshellthegeek on Skype<br /></span>
-                <span id="stackoverflow" class="contactfader hidden">www.stackoverflow.com/users/3987203/phillammon on StackOverflow<br /></span>
-                <span id="steam" class="contactfader hidden">www.steamcommunity.com/id/Phillammon/ on Steam<br /></span>
-                <span id="twitch" class="contactfader hidden">www.twitch.tv/phillammon on Twitch<br /></span>
+                <span id="email" class="contactfader hidden"><b>alistair@hippotigris.org.uk</b> via Email<br /></span>
+                <span id="phone" class="contactfader hidden"><b>(+44)7474 109646</b> via Phone<br /></span>
+                <span id="github" class="contactfader hidden"><b>www.github.com/Phillammon</b> on Github<br /></span>
+                <span id="twitter" class="contactfader hidden"><b>www.twitter.com/Phillammon</b> on Twitter<br /></span>
+                <span id="linkedin" class="contactfader hidden"><b>www.linkedin.com/in/alistair-c-69892981</b> on LinkedIn<br /></span>
+                <span id="skype" class="contactfader hidden"><b>cryoshellthegeek</b> on Skype<br /></span>
+                <span id="stackoverflow" class="contactfader hidden"><b>www.stackoverflow.com/users/3987203/phillammon</b> on StackOverflow<br /></span>
+                <span id="steam" class="contactfader hidden"><b>www.steamcommunity.com/id/Phillammon/</b> on Steam<br /></span>
+                <span id="twitch" class="contactfader hidden"><b>www.twitch.tv/phillammon</b> on Twitch<br /></span>
             </div>
             <span id="emailbutton"><a href="mailto:alistair@hippotigris.org.uk"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
             <span id="phonebutton"><a href="tel:07474109646"><i class="fa fa-phone fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
@@ -38,7 +38,7 @@
             <span id="twitchbutton"><a href="https://www.twitch.tv/phillammon"><i class="fa fa-twitch fa-5x" aria-hidden="true"></i></a></span><br /><br /><br />
             <div class="makeline"><span class="online">or...</span></div><br />
             <span id="formbutton" class="buttonspan">Contact me directly.</span><br /><br /><br />
-            <span id="contactform" class="hidden"></span>
+            <span id="contactform" class="hidden"> This form is currently not implemented. Sorry!</span>
         </div>
         <div id="bottominfo" class="footer">
             Made by Alistair "Phillammon" Crook. <a style="text-decoration: underline;"href="https://github.com/Phillammon/acrook.co.uk/issues">Suggestions? Problems?</a></div>
@@ -64,7 +64,20 @@
                 $('#steambutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#steam').stop().animate({width: "toggle"});});
                 $('#twitchbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#twitch').stop().animate({width: "toggle"});});
                 $('#twitchbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#twitch').stop().animate({width: "toggle"});});
+                window.onpageshow = reset
             });
+            function reset(){
+                $('#default').show();
+                $('#email').hide();
+                $('#phone').hide();
+                $('#github').hide();
+                $('#twitter').hide();
+                $('#linkedin').hide();
+                $('#skype').hide();
+                $('#stackoverflow').hide();
+                $('#steam').hide();
+                $('#twitch').hide();
+            }
         </script>
     </body>
 </html>
