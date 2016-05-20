@@ -14,8 +14,57 @@
             </a>
             <hr></hr>
         </div>
+        <div id="content" class="content">
+            <div id="contactme">
+                <span id="default" class="contactfader"><br /></span>
+                <span id="email" class="contactfader hidden">alistair@hippotigris.org.uk via Email<br /></span>
+                <span id="phone" class="contactfader hidden">(+44)7474 109646 via Phone<br /></span>
+                <span id="github" class="contactfader hidden">www.github.com/Phillammon on Github<br /></span>
+                <span id="twitter" class="contactfader hidden">www.twitter.com/Phillammon on Twitter<br /></span>
+                <span id="linkedin" class="contactfader hidden">www.linkedin.com/in/alistair-c-69892981 on LinkedIn<br /></span>
+                <span id="skype" class="contactfader hidden">cryoshellthegeek on Skype<br /></span>
+                <span id="stackoverflow" class="contactfader hidden">www.stackoverflow.com/users/3987203/phillammon on StackOverflow<br /></span>
+                <span id="steam" class="contactfader hidden">www.steamcommunity.com/id/Phillammon/ on Steam<br /></span>
+                <span id="twitch" class="contactfader hidden">www.twitch.tv/phillammon on Twitch<br /></span>
+            </div>
+            <span id="emailbutton"><a href="mailto:alistair@hippotigris.org.uk"><i class="fa fa-envelope fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
+            <span id="phonebutton"><a href="tel:07474109646"><i class="fa fa-phone fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
+            <span id="githubbutton"><a href="https://github.com/Phillammon"><i class="fa fa-github fa-5x" aria-hidden="true"></i></a></span><br />
+            <span id="twitterbutton"><a href="https://twitter.com/Phillammon"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;            
+            <span id="linkedinbutton"><a href="https://www.linkedin.com/in/alistair-c-69892981"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
+            <span id="skypebutton"><a href="skype:cryoshellthegeek?call"><i class="fa fa-skype fa-5x" aria-hidden="true"></i></a></span><br />
+            <span id="stackoverflowbutton"><a href="http://stackoverflow.com/users/3987203/phillammon"><i class="fa fa-stack-overflow fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
+            <span id="steambutton"><a href="http://steamcommunity.com/id/Phillammon/"><i class="fa fa-steam-square fa-5x" aria-hidden="true"></i></a></span>&nbsp;&nbsp;
+            <span id="twitchbutton"><a href="https://www.twitch.tv/phillammon"><i class="fa fa-twitch fa-5x" aria-hidden="true"></i></a></span><br /><br /><br />
+            <div class="makeline"><span class="online">or...</span></div><br />
+            <span id="formbutton" class="buttonspan">Contact me directly.</span><br /><br /><br />
+            <span id="contactform" class="hidden"></span>
+        </div>
         <div id="bottominfo" class="footer">
             Made by Alistair "Phillammon" Crook. <a style="text-decoration: underline;"href="https://github.com/Phillammon/acrook.co.uk/issues">Suggestions? Problems?</a></div>
         </div>
+        <script>
+            $(document).ready(function() {
+                $('#formbutton').click(function() {$('#contactform').stop().fadeIn(400);});
+                $('#emailbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#email').stop().animate({width: "toggle"});});
+                $('#emailbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#email').stop().animate({width: "toggle"});});
+                $('#phonebutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#phone').stop().animate({width: "toggle"});});
+                $('#phonebutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#phone').stop().animate({width: "toggle"});});
+                $('#githubbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#github').stop().animate({width: "toggle"});});
+                $('#githubbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#github').stop().animate({width: "toggle"});});
+                $('#twitterbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#twitter').stop().animate({width: "toggle"});});
+                $('#twitterbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#twitter').stop().animate({width: "toggle"});});
+                $('#linkedinbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#linkedin').stop().animate({width: "toggle"});});
+                $('#linkedinbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#linkedin').stop().animate({width: "toggle"});});
+                $('#skypebutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#skype').stop().animate({width: "toggle"});});
+                $('#skypebutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#skype').stop().animate({width: "toggle"});});
+                $('#stackoverflowbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#stackoverflow').stop().animate({width: "toggle"});});
+                $('#stackoverflowbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#stackoverflow').stop().animate({width: "toggle"});});
+                $('#steambutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#steam').stop().animate({width: "toggle"});});
+                $('#steambutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#steam').stop().animate({width: "toggle"});});
+                $('#twitchbutton').mouseover(function() {$('#default').stop().animate({width: "toggle"});$('#twitch').stop().animate({width: "toggle"});});
+                $('#twitchbutton').mouseleave(function() {$('#default').stop().animate({width: "toggle"});$('#twitch').stop().animate({width: "toggle"});});
+            });
+        </script>
     </body>
 </html>
