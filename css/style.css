@@ -79,6 +79,9 @@
     text-align: center;
     font-family: arial;
     font-size: small;
+    z-index: 1;
+    background:#fff; 
+    border-top: 1px solid #999; 
 }
 
 .buttonspan{
