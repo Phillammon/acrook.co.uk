@@ -1,3 +1,6 @@
+#GoDaddy. Go figure.
+Options -Multiviews
+
 RewriteEngine On
 # Get rid of index.html at the end of the url if we're on the homepage
 RewriteRule ^index\.html$ / [NC,L,R=301]
