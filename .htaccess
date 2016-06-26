@@ -1,10 +1,7 @@
 #GoDaddy. Go figure.
 Options -Multiviews
 
-RewriteEngine On
-# Get rid of index.html at the end of the url if we're on the homepage
-RewriteRule ^index\.html$ / [NC,L,R=301]
-
-# Drop the .html on pages
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
